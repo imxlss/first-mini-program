@@ -1,0 +1,46 @@
+<!-- index.wxml -->
+<view class="container">
+  <block>
+    <block>
+      <view>
+        <text class="loc_txt">{{weatherInfo.basic.location}}</text>
+      </view>
+      <view>
+        <text class="cond_txt">{{weatherInfo.now.cond_txt}}</text>
+      </view>
+      <view>
+        <text class="tmp_txt">{{weatherInfo.now.tmp}}</text>
+      </view>
+    </block>
+    <view class="today-container">
+      <view class="today-week">
+        <text>{{"星期" + WEEKDAYS[weekIndex]}}</text>
+        <text>今天</text>
+      </view>
+      <view class="today-temp">
+        <text>{{weatherInfo.daily_forecast[0].tmp_max}}</text>
+        <text>{{weatherInfo.daily_forecast[0].tmp_min}}</text>
+      </view>
+    </view>
+  </block>
+  <view class="line"></view>
+  <view class="future-container">
+    <view class="future-item" wx:for="{{weatherInfo.daily_forecast}}">
+      <view>
+        <text>{{"星期" + WEEKDAYS[(weekIndex + index) % 7]}}</text>
+      </view>
+      <view>
+        <text>{{item.tmp_min}}~{{item.tmp_max}}℃</text>
+      </view>
+      <view>
+        <text>{{item.cond_txt_d}}</text>
+      </view>
+      <view>
+        <text>{{item.wind_dir}}</text>
+      </view>
+    </view>
+  </view>
+  <block>
+    <view class="life-index"></view>
+  </block>
+</view>
