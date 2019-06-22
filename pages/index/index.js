@@ -37,7 +37,7 @@ Page({
     } else if (hour >= 11 && hour < 13) {
       msg = '中午啦，吃饭没～';
     } else if (hour >= 13 && hour < 19) {
-      msg = '下午啦，伸伸胳膊，扭扭脖子！';
+      msg = '下午啦，起来活动活动吧～';
     } else if (hour >= 19 && hour < 20) {
       msg = '回家吃饭咯～';
     } else if (hour >= 20 && hour < 23) {
