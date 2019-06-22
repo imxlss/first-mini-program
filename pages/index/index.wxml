@@ -1,5 +1,9 @@
 <!-- index.wxml -->
 <view class="container">
+  <view class="top-text-container">
+    <text>{{nickName}}</text>
+    <text>，{{dailyMSg}}</text>
+  </view>
   <block>
     <block>
       <view>
@@ -10,6 +14,7 @@
       </view>
       <view>
         <text class="tmp_txt">{{weatherInfo.now.tmp}}</text>
+        <!-- <text>°C</text> -->
       </view>
     </block>
     <view class="today-container">
@@ -25,12 +30,12 @@
   </block>
   <view class="line"></view>
   <view class="future-container">
-    <view class="future-item" wx:for="{{weatherInfo.daily_forecast}}">
+    <view class="future-item" wx:for="{{weatherInfo.daily_forecast}}" wx:key="index">
       <view>
         <text>{{"星期" + WEEKDAYS[(weekIndex + index) % 7]}}</text>
       </view>
       <view>
-        <text>{{item.tmp_min}}~{{item.tmp_max}}℃</text>
+        <text>{{item.tmp_min}}°C~{{item.tmp_max}}°C</text>
       </view>
       <view>
         <text>{{item.cond_txt_d}}</text>
@@ -40,7 +45,17 @@
       </view>
     </view>
   </view>
-  <block>
-    <view class="life-index"></view>
-  </block>
+  <view class="line"></view>
+  <view>
+    <block class="life-index-container" wx:for="{{lifeStyle}}" wx:key="item.type">
+      <!-- <view class="line"></view> -->
+      <view class="life-index">
+        <view class="life-index-title">
+          <text>{{INDEX_TITLE[item.type]}}</text>
+          <text class="life-index-title-brf">{{item.brf}}</text>
+        </view>
+        <text class="life-index-txt">{{item.txt}}</text>
+      </view>
+    </block>
+  </view>
 </view>
