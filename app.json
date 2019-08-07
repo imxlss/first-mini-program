@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -8,9 +9,25 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于"
+      }
+    ]
+  },
+  "usingComponents": {
+    "card": "/component/card/card"
+  },
   "permission": {
     "scope.userLocation": {
       "desc": "定位以获取天气信息"
     }
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
