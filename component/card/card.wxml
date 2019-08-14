@@ -1,3 +1,14 @@
-<view>
-    <text>{{title}}</text>
+<!-- 这是自定义组件的内部WXML结构 -->
+<view class="card">
+  <view class="card-top">
+    <view>
+      <text>{{CURRENTDAYS[dayIndex]}}</text>
+      <text class="text-weekday">{{"星期" + WEEKDAYS[weekIndex]}}</text>
+    </view>
+    <text>{{forecast.tmp_min}}°C~{{forecast.tmp_max}}°C</text>
+  </view>
+  <view class="card-top">
+    <text>{{forecast.cond_txt_d}}</text>
+    <text>{{forecast.wind_dir}}</text>
+  </view>
 </view>
