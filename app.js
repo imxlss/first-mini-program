@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function() {
+  onLaunch: function () {
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -26,7 +26,9 @@ App({
     userInfo: null,
     key: 'f4c158835887465388f2f255c81afe52',
     request_url: {
-      weather: 'https://free-api.heweather.net/s6/weather'
+      icon: 'https://cdn.heweather.com/cond_icon/',
+      weather: 'https://free-api.heweather.net/s6/weather',
+      now: 'https://free-api.heweather.net/s6/weather/now'
     }
   }
 });
