@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/select/select",
     "pages/about/about",
     "pages/index/index",
     "pages/test/test"
@@ -11,14 +12,17 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
         "pagePath": "pages/about/about",
         "text": "关于"
+      },
+      {
+        "pagePath": "pages/select/select",
+        "text": "select"
       },
       {
         "pagePath": "pages/test/test",
