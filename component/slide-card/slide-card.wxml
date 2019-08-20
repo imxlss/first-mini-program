@@ -1,0 +1,18 @@
+<view class="section">
+  <movable-area>
+    <movable-view out-of-bounds="true" direction="horizontal" inertia="true" damping="50" bind:touchstart="start" bind:touchend="end" x="{{xAxis}}">
+      <view class="content">
+        <view>
+          <text class="font-size-m">啊是大</text>
+          <text class="font-size-m">啊是大</text>
+        </view>
+        <view>
+          <text class="font-size-s"></text>
+        </view>
+      </view>
+      <view class="operate font-size-s" bind:tap="delete">
+        <text>删除</text>
+      </view>
+    </movable-view>
+  </movable-area>
+</view>

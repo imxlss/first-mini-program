@@ -1,0 +1,42 @@
+.font-size-s {
+  font-size: 10pt;
+}
+
+.font-size-m {
+  font-size: 11pt;
+}
+
+.font-size-l {
+  font-size: 13pt;
+}
+
+movable-area {
+  width: 90vw;
+  height: 150rpx;
+  /* background: #fff; */
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+movable-view {
+  width: calc(90vw + 121rpx);
+  height: 150rpx;
+  background: #fff;
+  display: flex;
+}
+
+.content {
+  width: calc(90vw + 1rpx);
+  height: 100%;
+}
+
+.operate {
+  width: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1rpx solid #ccc;
+  letter-spacing: 1rpx;
+}

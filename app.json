@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/test/test",
     "pages/select/select",
     "pages/about/about",
-    "pages/index/index",
-    "pages/test/test"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -31,7 +31,8 @@
     ]
   },
   "usingComponents": {
-    "card": "/component/card/card"
+    "card": "/component/card/card",
+    "slide-card": "/component/slide-card/slide-card"
   },
   "permission": {
     "scope.userLocation": {
