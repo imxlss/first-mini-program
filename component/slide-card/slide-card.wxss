@@ -1,42 +1,42 @@
 .font-size-s {
-  font-size: 10pt;
-}
-
-.font-size-m {
   font-size: 11pt;
 }
 
+.font-size-m {
+  font-size: 12pt;
+}
+
 .font-size-l {
-  font-size: 13pt;
+  font-size: 14pt;
 }
 
 movable-area {
-  width: 90vw;
+  width: 100vw;
   height: 150rpx;
   /* background: #fff; */
   background: #fff;
   display: flex;
-  justify-content: center;
   overflow: hidden;
 }
 
 movable-view {
-  width: calc(90vw + 121rpx);
+  width: calc(100vw + 140rpx);
   height: 150rpx;
   background: #fff;
   display: flex;
 }
 
 .content {
-  width: calc(90vw + 1rpx);
+  width: 100vw;
   height: 100%;
 }
 
 .operate {
-  width: 120rpx;
+  width: 140rpx;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 1rpx solid #ccc;
-  letter-spacing: 1rpx;
+  letter-spacing: 2rpx;
+  color: #fff;
+  background: #f76260;
 }
